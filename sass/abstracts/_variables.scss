@@ -1,8 +1,15 @@
 // Tipografias //
-$roboto-font: "Roboto", sans-serif;
+$primary-font: 'Plus Jakarta Sans';
 
 // Colores //
-$color-primary: blue;
+$color-blue: #666CA3;
+$color-black: #13183f;
+$color-grey: #83869A;
+$color-pink: #f74780;
+$color-pink-light: #ffa7c3;
+$color-gradient-pink-orange: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+$color-gradient-pink-blue: linear-gradient(180deg, #4851ff 0.04%, #f02aa6 100%);
+
 
 // Breakpoints //
 $bp-tablet: 768px;
