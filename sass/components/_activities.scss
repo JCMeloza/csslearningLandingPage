@@ -1,13 +1,22 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as b;
 
 .activities{
     padding-bottom: 40px;
+    background-image: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+    @include b.breakpoint(tablet){
+        padding-bottom: 80px;
+    }
+
     &_header{
         background-image: $color-gradient-pink-orange;
         padding: 25px 30px;
         color: white;
         border-radius: 10px;
         margin-bottom: 50px;
+        @include b.breakpoint(tablet){
+            margin-bottom: 0;
+        }
     }
 
     &_item{
@@ -17,6 +26,9 @@
         border-radius: 10px;
         padding: 56px 28px 40px;
         position: relative;
+        @include b.breakpoint(tablet){
+            margin-bottom: 0;
+        }
         
         &:last-child{
             margin-bottom: 0;
@@ -54,5 +66,14 @@
         }
 
         
+    }
+
+    .container {
+        @include b.breakpoint(tablet){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px 30px;
+            
+        }
     }
 }
