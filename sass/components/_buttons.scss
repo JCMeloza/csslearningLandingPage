@@ -3,9 +3,15 @@
     @include b.button();
 }
 
+
+
 .button--pink-orange {
     @include b.button--pink-orange();
 }
 .button--pink-blue {
     @include b.button--pink-blue();
+}
+
+.button-link {
+    @include b.button-link();
 }
