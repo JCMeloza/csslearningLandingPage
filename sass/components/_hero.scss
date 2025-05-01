@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as *;
+
+.hero {
+
+    &_title {
+        margin-bottom: 26px;
+        font-size: 40px;
+        line-height: 51px;
+        font-weight: 800;
+    }
+    &_subtitle {
+        margin-bottom: 26px;
+        color: $color-grey;
+        line-height: 26px;
+    }
+}
