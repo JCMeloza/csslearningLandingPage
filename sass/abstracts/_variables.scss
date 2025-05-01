@@ -3,13 +3,16 @@ $primary-font: 'Plus Jakarta Sans';
 
 // Colores //
 $color-blue: #666CA3;
+$color-blue-dark: #4851ff;
 $color-black: #13183f;
 $color-grey: #83869A;
 $color-pink: #f74780;
 $color-pink-light: #ffa7c3;
-$color-gradient-pink-orange: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
-$color-gradient-pink-blue: linear-gradient(180deg, #4851ff 0.04%, #f02aa6 100%);
+$color-orange: #ff6f48;
+$color-magenta: #f02aa6;
 
+$color-gradient-pink-orange: linear-gradient(180deg, $color-orange 0.04%, $color-magenta 100%);
+$color-gradient-pink-blue: linear-gradient(180deg, $color-blue-dark 0.04%, $color-magenta 100%);
 
 // Breakpoints //
 $bp-tablet: 768px;
