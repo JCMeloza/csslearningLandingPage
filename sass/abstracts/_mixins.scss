@@ -32,9 +32,22 @@
   margin: 0;
 }
 
-@mixin button($bg-color: $black, $color: white ){
+@mixin button($bg-color: $color-black, $color: white ){
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 25px;
   color: $color;
   background-color: $bg-color;
+  text-decoration: none;
+  border-radius: 28px ;
+  
+}
+@mixin button--pink-orange(){
+  @include button();
+  background-image: $color-gradient-pink-orange;
+
+  
+}
+@mixin button--pink-blue (){
+  @include button();
+  background-image: $color-gradient-pink-blue;
 }
