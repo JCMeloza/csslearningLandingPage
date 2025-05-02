@@ -75,5 +75,10 @@
             gap: 40px 30px;
             
         }
+        @include b.breakpoint(tablethorizontal){
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 80px 30px;
+
+        }
     }
 }

@@ -3,6 +3,9 @@
 
 .hero {
     margin-bottom: 40px;
+    @include b.breakpoint(tablethorizontal){
+        margin-bottom: 80px;
+    }
     &_title {
         margin-bottom: 26px;
         font-size: 40px;
@@ -28,6 +31,9 @@
         @include b.breakpoint(tablet){
             width: 50%;
             margin: 0;
+        }
+        @include b.breakpoint(tablethorizontal){
+            height: 350px;
         }
         
     }
@@ -65,6 +71,10 @@
                 top: -33px;
                 
             }
+            @include b.breakpoint(tablethorizontal){
+                top: 7px;
+                
+            }
 
         }
 
@@ -76,6 +86,12 @@
             @include b.breakpoint(tablet){
                 left: 40px;
                 bottom: -58px;
+                
+            }
+            @include b.breakpoint(tablethorizontal){
+                left: 151px;
+                bottom: -19px;
+
                 
             }
         }
@@ -94,12 +110,24 @@
         @include b.breakpoint(tablet){
             display: flex;
             padding-bottom: 80px;
+            justify-content: space-between;
+            align-items: center;
             
         }
+        @include b.breakpoint(tablethorizontal){
+            padding-bottom: 50px;
+            align-items: center;;
+        }
+
+
     }
     &_content {
         @include b.breakpoint(tablet){
             width: 50%;
+            
+        }
+        @include b.breakpoint(tablethorizontal){
+            width: 40%;
             
         }
     }
