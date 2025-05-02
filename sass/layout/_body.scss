@@ -10,7 +10,10 @@ body {
 
     @include b.breakpoint(tablethorizontal){
         background-position: 114% 0;
-        block-size: 500px;
+        background-size: 500px;
     }
-    
+    @include b.breakpoint(desktop){
+        background-position: 108% -9px;
+        background-size: 500px;
+    }
 }

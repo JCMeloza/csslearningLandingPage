@@ -4,7 +4,7 @@
 .hero {
     margin-bottom: 40px;
     @include b.breakpoint(tablethorizontal){
-        margin-bottom: 80px;
+        margin-bottom: 130px;
     }
     &_title {
         margin-bottom: 26px;
@@ -35,6 +35,9 @@
         @include b.breakpoint(tablethorizontal){
             height: 350px;
         }
+        @include b.breakpoint(desktop){
+            width: 400px;
+        }
         
     }
     &_number {
@@ -63,17 +66,22 @@
         }
 
         &-1{
-            padding: 16px 20px 16px 20px;
+            padding: 16px 40px 16px 20px;
             top: 0;
             right: 0;
             position: absolute;
             @include b.breakpoint(tablet){
-                top: -33px;
+                top: -118px;
                 
             }
             @include b.breakpoint(tablethorizontal){
-                top: 7px;
+                top: 23px;
+                right: 55px;
                 
+            }
+            @include b.breakpoint(desktop){
+                top: 85px;
+                right: 20px;
             }
 
         }
@@ -85,12 +93,18 @@
             position: absolute;
             @include b.breakpoint(tablet){
                 left: 40px;
-                bottom: -58px;
+                bottom: -227px;
                 
             }
             @include b.breakpoint(tablethorizontal){
-                left: 151px;
-                bottom: -19px;
+                left: 95px;
+                bottom: -104px;
+
+                
+            }
+            @include b.breakpoint(desktop){
+                left: -44px;
+                bottom: -25px;
 
                 
             }
@@ -118,6 +132,10 @@
             padding-bottom: 50px;
             align-items: center;;
         }
+        @include b.breakpoint(desktop){
+            padding-bottom: 80px;
+            align-items: center;;
+        }
 
 
     }
@@ -129,6 +147,9 @@
         @include b.breakpoint(tablethorizontal){
             width: 40%;
             
+        }
+        @include b.breakpoint(desktop){
+            max-width: 439px;
         }
     }
 }
